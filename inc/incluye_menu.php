@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">INICIO</a>
+            <a href="index.php" class="navbar-brand">INICIO</a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -21,10 +21,10 @@
                  <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">Proveedores<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Agregar un Proveedor</a></li>
+                        <li><a href="proveedor_registrar.php">Agregar un Proveedor</a></li>
                         <li><a href="#">Agregar una sucursal</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Gestionar Proveedores</a></li>
+                        <li><a href="ver_marcas.php">Gestionar Proveedores</a></li>
                     </ul>
                 </li>
                  
@@ -33,7 +33,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Agregar una refacci&oacute;n</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Consulta rápida</a></li>
+                        <li><a href="ver_marcas.php">Consulta rápida</a></li>
                     </ul>
                 </li>
             
