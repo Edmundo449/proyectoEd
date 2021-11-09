@@ -31,7 +31,7 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">Refacciones<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Agregar una refacci&oacute;n</a></li>
+                        <li><a href="refacciones_seleccionar_marca.php">Agregar una refacci&oacute;n</a></li>
                         <li class="divider"></li>
                         <li><a href="ver_marcas.php">Consulta rápida</a></li>
                     </ul>
