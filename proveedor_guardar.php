@@ -9,40 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id_proveedor='';
     $ins=$con->prepare("INSERT INTO proveedor VALUES(?,?,?,?,?,?)");
     $ins->bind_param("isssss",$id,$nombre_del_proveedor_post,$direccion_del_proveedor_post,$telefono_1_post,$telefono_2_post,$correo_proveedor_post);
-    if($ins->execute()){
-        echo 
-		'<style type="text/css">
-		  p { 
-				padding: 20px;
-				width: 100%;
-				background-color: #04AA6D;
-				color: white;
-				margin-bottom: 15px;
-				font-size: 28px;
-				margin-bottom: 15px;
-			}
-		</style>
-		<div class="alertBien">				
-			<center> <p> <strong>¡HECHO!</strong> El proveedor se dió de alta con éxito. </p> </center>
-		</div>';
-		require("index.php");	
+    if($ins->execute()){         
+		header("Location: alerta.php?tipo=exito&operacion=Proveedor Guardado&destino=proveedor_registrar.php");
     }
-    else{
-        echo 
-		'<style type="text/css">
-		  p { 
-				padding: 20px;
-				width: 100%;
-				background-color: #f44336;
-				color: white;
-				font-size: 28px;
-				margin-bottom: 15px;
-			}
-		</style>
-		<div class="alertBien">				
-			<center> <p> <strong>¡ERROR!</strong> El proveedor no se pudo registrar.. </p> </center>
-		</div>';
-		require("index.php");	
+    else{         
+		header("Location: alerta.php?tipo=fracaso&operacion=Proveedor No Guardado&destino=proveedor_registrar.php");
     }
     $ins->close();
     $con->close();
