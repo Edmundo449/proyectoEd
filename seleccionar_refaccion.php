@@ -31,6 +31,7 @@
                     <th>Marca</th>
                     <th>Nombre de la refaccion</th>
                     <th>Descripcion de la refaccion</th>
+					<th>Imagen</th>
                     <th>Clic para seleccionar</th>
                     </thead>
                     <tfoot>
@@ -38,6 +39,7 @@
                     <th>Marca</th>
                     <th>Nombre de la refaccion</th>
                     <th>Descripcion de la refaccion</th>
+					<th>Imagen</th>
                     <th>Clic para seleccionar</th>
                     </tfoot>
                     <tbody>
@@ -55,6 +57,11 @@
                                 <td>
                                     <?php echo $f['refaccion_descripcion'] ?>
                                 </td>
+								
+								<td>
+                                    <img class="img-responsive" src="<?php echo $f['refaccion_imagen']?>"/>
+                                </td>
+								
                                 <td>
                                     <a href="refacciones_cotizar.php?refaccion_id=<?php echo $f['refaccion_id'] ?>&refaccion_nombre=<?php echo $f['refaccion_nombre'] ?>">Seleccionar</a>
                                 </td>
